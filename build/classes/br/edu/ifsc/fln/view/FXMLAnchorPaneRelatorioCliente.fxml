@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="385.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifsc.fln.controller.FXMLAnchorPaneRelatorioClienteController">
+   <children>
+      <TableView fx:id="tableView" layoutX="-1.0" prefHeight="337.0" prefWidth="600.0" AnchorPane.bottomAnchor="48.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="tableColumnClienteID" prefWidth="48.0" style="-fx-alignment: center;" text="ID" />
+          <TableColumn fx:id="tableColumnClienteNome" prefWidth="170.0" text="Nome" />
+            <TableColumn fx:id="tableColumnClienteCelular" prefWidth="125.0" text="Celular" />
+            <TableColumn fx:id="tableColumnClienteEmail" prefWidth="122.0" text="E-mail" />
+            <TableColumn fx:id="tableColumnClienteDataCadastro" prefWidth="142.0" text="Data de Cadastro" />
+        </columns>
+      </TableView>
+      <Button fx:id="buttonImprimir" layoutX="522.0" layoutY="345.0" mnemonicParsing="false" onAction="#handleImprimir" text="Imprimir" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="16.0" />
+   </children>
+</AnchorPane>
